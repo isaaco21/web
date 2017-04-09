@@ -16,8 +16,8 @@
                     </div>
                 ";
 		}else{
-			/*Si se intenta entrar a una pagina restringuida sin iniciar session, lo redireccionados
-			a una pagina donde se le diga Zona Registringuida y debe logearse, asi de sencillito
+			/*Si se intenta entrar a una pagina restringida sin iniciar session,sera redireccionado
+			a una pagina donde se le diga Zona Registringida y debera logearse.
 			*/
 			/*Redireccionar a no_session.php*/
 			echo "
@@ -49,8 +49,8 @@
 				echo"<script>alert('Usuario Registrado');</script>";
 				echo"<script>alert('<a href='iniciarSesion.html'>Iniciar Sesion<a/>');</script>";
 				$asunto='Gracias por Registrarte en BuyIt!';
-				$cuerpo='Hola $nombre, gracias por registrarte en Nike! Accede a el enlace debajo empieza tus
-				compras online! <a href="http://nikestore.esy.es" >Nike</a> ';
+				$cuerpo='Hola $nombre, gracias por registrarte en ITLABike Accede a el enlace debajo empieza tus
+				compras online! <a href="http://bikestore.esy.es" >bike</a> ';
 
 				//mail($Mail,$asunto,$cuerpo);
 			}else{
@@ -78,7 +78,7 @@
 		}
 	}
 
-	// aqui se jalan los datos del usuario
+	// aqui es donde se buscan los datos
 
 	function datosDeUsuario (){
 
@@ -132,16 +132,16 @@
 	}
 
 
-	function funcionComprar ($comprarInputUser,$comprarInputEmail,$comprarInputPass,$comprarInputConfirmPass,$comprarInputTargeta,$comprarInputSeguridad) {
+	function funcionComprar ($comprarInputUser,$comprarInputEmail,$comprarInputPass,$comprarInputConfirmPass,$comprarInputTarjeta,$comprarInputSeguridad) {
 		include("conexion.php");
 			$comprarInputPass=md5($comprarInputPass);
 			$comprarInputConfirmPass=md5($comprarInputConfirmPass);
-			$comprarInputTargeta=md5($comprarInputTargeta);
+			$comprarInputTargeta=md5($comprarInputTarjeta);
 			$comprarInputSeguridad=md5($comprarInputSeguridad);
 			$guardar="
-				INSERT INTO comprar (usuario,email,pass,confirmPass,targeta,seguridad)
+				INSERT INTO comprar (usuario,email,pass,confirmPass,tarjeta,seguridad)
 				VALUES
-				('$comprarInputUser','$comprarInputEmail','$comprarInputPass','$comprarInputConfirmPass','$comprarInputTargeta','$comprarInputSeguridad')
+				('$comprarInputUser','$comprarInputEmail','$comprarInputPass','$comprarInputConfirmPass','$comprarInputTarjeta','$comprarInputSeguridad')
 			";
 			if(mysql_query($guardar)){
 				echo"<script>alert('Mensaje Enviado');</script>";

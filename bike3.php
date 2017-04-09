@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-        <title>Nike - Oficial Web</title>
+        <title>ItlaBike - Oficial Web</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" type="text/css" href="engine1/style.css"/>
@@ -20,33 +20,33 @@
             <?php
                 include_once("header.php");
             ?>
-            <div id="contenidoPrincipal">  
+            <div id="contenidoPrincipal">
                 <section id="cuerpoPrincipal">
                     <div id="contenido">
                        <div id="shoePage">
                             <div class="img">
-                                <img src="img/shoes/shoe4.jpg" alt="">
+                                <img src="img/shoes/shoe3.jpg" alt="">
                             </div>
-                           
+
                        </div>
                     </div>
                     <aside class="panelLateral shoePanel">
                         <div class="tituloPrincipal">
-                            <h1>Nike Reebok</h1>
-                            <p>Cleat futures a one-piece Flynit upper and carbon fiber plate for a super-lightweight fit and stabilty ideal for skill players who need maximum comfor and support on the field.</p>
-                            <h2 class="precio">100$</h2>
+                            <h1>Lebron 12 Ext</h1>
+                            <p>Lebron 12 EXT Mens Shoe cable system that integrates with a supportive strap, the Nike Zoom Lebron Basketball Shoe dilivers high-performance stability and the ultimate glove-like fit. Provide responsive cushioning upon impact, and a rubber hexagonal outsole gives you exceptional traction on the hardwood.!</p>
+                            <h2 class="precio">400$</h2>
                             <form id="formBuy" class="formLayout" action="index.php" method="post" onsubmit="return Validarr();">
                                 <input type="submit" class="comprar" value="ADD TO CART" onclick="recibido();">
-                                <input type="submit" class="comprar" action="buy.php" value="BUY">
+                                <input type="submit" class="comprar" value="BUY">
                             </form>
-                            
+
                         </div>
                     </aside>
                 </section>
             </div>
-        </div>				
+        </div>
        <?php
             include_once( "footer.php");
-        ?>	
+        ?>
     </body>
 </html>

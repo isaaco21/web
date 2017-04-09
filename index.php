@@ -56,28 +56,28 @@
                     <section id="modelos">
                         <article>
                             <div>
-                                <a href="shoe1.php"><img src="img/shoes/shoe1.jpg" alt=""></a>
+                                <a href="bike1.php"><img src="img/shoes/bike1.jpg" alt=""></a>
                                 <h3>Nike Rebook</h3>
                                 <div class="gradientDiv"></div>
                             </div>
                         </article>
                         <article>
                             <div>
-                                <a href="shoe2.php"><img src="img/shoes/shoe2.jpg" alt=""></a>
+                                <a href="bike2.php"><img src="img/shoes/bike2.png" alt=""></a>
                                 <h3>Nike Air Force</h3>
                                 <div class="gradientDiv"></div>
                             </div>
                         </article>
                         <article>
                             <div>
-                                <a href="shoe3.php"><img src="img/shoes/shoe3.jpg" alt=""></a>
+                                <a href="bike3.php"><img src="img/shoes/bike3.jpg" alt=""></a>
                                 <h3>Lebron 12 Ext</h3>
                                 <div class="gradientDiv"></div>
                             </div>
                         </article>
                         <article>
                             <div>
-                                <a href="shoe4.php"><img src="img/shoes/shoe4.jpg" alt=""></a>
+                                <a href="bike4.php"><img src="img/shoes/bike4.jpg" alt=""></a>
                                 <h3>Nike SpringBreak</h3>
                                 <div class="gradientDiv"></div>
                             </div>
