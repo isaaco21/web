@@ -25,28 +25,33 @@
         <?php
             include_once("header.php");
         ?>
-        <!-- Start WOWSlider.com BODY section -->
-            <div id="wowslider-container1">
-            <div class="ws_images"><ul>
-                  <li><img src="data1/images/banner3.jpg" alt="" title="" id="wows1_0"/></li>
-		<li><img src="data1/images/nikelogo.jpg" alt="" title="" id="wows1_1"/></li>
-		<li><a href="http://wowslider.com/vi"><img src="data1/images/02.jpg" alt="bootstrap carousel example" title="" id="wows1_2"/></a></li>
-		<li><img src="data1/images/hypervenombanner_5.jpg" alt="" title="" id="wows1_3"/></li>
-
-                </ul></div>
-                <div class="ws_bullets"><div>
-                    <a href="#" title=""><span><img src="data1/tooltips/bg.jpg" alt=""/>1</span></a>
-                </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">slider html5</a> by WOWSlider.com v8.2</div>
-            </div>
-            <script type="text/javascript" src="engine1/wowslider.js"></script>
-            <script type="text/javascript" src="engine1/script.js"></script>
-        <!-- End WOWSlider.com BODY section -->
+				<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+				<div id="wowslider-container1">
+				<div class="ws_images"><ul>
+					<li><img src="data1/images/324_rs_3q_2017116.jpg" alt="Bike1" title="Bike1" id="wows1_0"/></li>
+					<li><img src="data1/images/2139600_2017_a_1_top_fuel_9_9_rsl.png" alt="Bike 2" title="Bike 2" id="wows1_1"/></li>
+					<li><img src="data1/images/ltsportredxiv2100.jpg" alt="Bike 3" title="Bike 3" id="wows1_2"/></li>
+					<li><a href="http://wowslider.com"><img src="data1/images/pipeline_770msl.jpg" alt="wow slider" title="Bike 4" id="wows1_3"/></a></li>
+					<li><img src="data1/images/sumbije.jpg" alt="Bike 5" title="Bike 5" id="wows1_4"/></li>
+				</ul></div>
+				<div class="ws_bullets"><div>
+					<a href="#" title="Bike1"><span><img src="data1/tooltips/324_rs_3q_2017116.jpg" alt="Bike1"/>1</span></a>
+					<a href="#" title="Bike 2"><span><img src="data1/tooltips/2139600_2017_a_1_top_fuel_9_9_rsl.png" alt="Bike 2"/>2</span></a>
+					<a href="#" title="Bike 3"><span><img src="data1/tooltips/ltsportredxiv2100.jpg" alt="Bike 3"/>3</span></a>
+					<a href="#" title="Bike 4"><span><img src="data1/tooltips/pipeline_770msl.jpg" alt="Bike 4"/>4</span></a>
+					<a href="#" title="Bike 5"><span><img src="data1/tooltips/sumbije.jpg" alt="Bike 5"/>5</span></a>
+				</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">http://wowslider.com/</a> by WOWSlider.com v8.7</div>
+				<div class="ws_shadow"></div>
+				</div>
+				<script type="text/javascript" src="engine1/wowslider.js"></script>
+				<script type="text/javascript" src="engine1/script.js"></script>
+				<!-- End WOWSlider.com BODY section -->
 
             <div id="contenidoPrincipal">
                 <div id="nuevosModelos">
                     <div class="tituloPrincipal centrarTexto">
-                        <h1>New Season</h1>
-                        <h3>The models for the next season</h3>
+                        <h1>Destacados</h1>
+                        <h3>Articulos destacados</h3>
                     </div>
                     <section id="modelos">
                         <article>
