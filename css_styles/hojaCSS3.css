@@ -1,0 +1,681 @@
+/* PROPIEDADES GENERALES */
+* {
+    margin:0px; 
+    padding: 0px; 
+    font-family: BebasNeue;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('fonts/bebasneue.eot');
+    src: url('fonts/bebasneue.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bebasneue.woff') format('woff'),
+         url('fonts/bebasneue.ttf') format('truetype');
+    
+}
+
+.inlineBlock {display:inline-block; vertical-align: top;}
+.centrarTexto {text-align: center;}
+.widthDe100{width: 100%!important;}
+.tituloPrincipal {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background: #e73050;
+
+}
+.tituloPrincipal h1 {
+    font-family: BebasNeue;
+    font-size: 30px;
+}
+.tituloPrincipal h2 {
+    font-family: BebasNeue;
+    font-size: 20px;
+}
+.tituloPrinicpal h4 {
+    font-family: arial;
+    font-size: 50px;
+    color: gainsboro;
+}
+
+a {
+    text-decoration: none; 
+    color: white;
+    transition: 200ms;
+}
+a:hover { color: gray;}
+.boxLink {
+    padding: 0px 7px 0px 7px !important; 
+    margin: 3px;
+}
+.boxLink:hover { color: white;  margin: 0px;  border: 3px solid white;}
+h1 { 
+    color: #fff; 
+}
+h2 {
+    font-size: 30px;
+    color: white;
+}
+
+h4 {
+    font-family: arial;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+/* PROPIEDADES DE INDEX */
+
+body {
+    background: LightGray;
+}
+	
+#contenedorPrincipal {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: LightGray;
+    z-index: 10;
+    margin-bottom: 210px;
+}
+
+/* ---- HEADER ---- */
+#header {
+    width:100%;
+    height: auto;
+    margin:auto;
+}
+    
+    #menuUsuario {
+        position: absolute;
+        top: 20px; right: 20px;
+        min-width: 300px;
+        height: auto;
+        font-size: 0;
+        background: #e73050;
+        z-index: 200;
+        box-shadow: 0px 0px 5px black;
+    }
+    #infoMenuUsuario, #formsMenuUsuario {
+        width: 100%;
+        height: auto;
+    }
+.formIniciarSesionDiv .tituloPrincipal, .formRegistroDiv .tituloPrincipal {
+    border-top: 2px solid white;
+    background: white;
+}
+.formIniciarSesionDiv .tituloPrincipal h1, .formRegistroDiv .tituloPrincipal h1 {
+    color: black;
+}
+    .localForm{display: none;}
+    #infoMenuUsuario > div {
+        display: inline-block;
+        vertical-align: top;
+    }
+    #info {
+        min-width: 200px;
+        height: 100px;
+        padding: 10px;
+        
+    }
+    #info .tituloPrincipal h4 {
+        display: inline-block;
+        color: white;
+    }
+    #info .tituloPrincipal h4:hover {
+        color:gray;
+        cursor: pointer;
+    }
+    #formsMenuUsuario {
+        background: white;
+    }
+
+    #avatar{
+        width: 100px;
+        height: 100px;
+        background: LightGray;
+        overflow: hidden;
+    }
+#avatar img {
+    height: 100%;
+    left: 50%;
+}
+    #cabecera{
+        background: gray;
+        overflow: hidden;
+    }
+        #cabecera img {
+            width: 100%;
+        }
+    #botonera{
+        width:100%;
+        height:40px;
+        background: linear-gradient(90deg, #43cea2 10%, #185a9d 90%);
+        margin:auto;
+        text-align:center;
+        line-height: 40px;
+        font-size:35px;
+        border-bottom: 3px solid black;
+    }
+
+
+
+
+/* ---- CUERPO ---- */
+
+#contenidoPrincipal {
+    width:1024px;
+    height: auto;
+    margin: auto;
+
+} 
+
+#nuevosModelos {
+    width: 100%;
+    height: auto;
+    background: #363636;
+}
+#nuevosModelos .titulo {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-bottom: 2px solid gray;
+    
+}
+.tit2 {
+    background: gray;
+}
+.titulo h3 {
+    color: #e73050;
+}
+#modelos {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    font-size: 0;
+}
+
+#modelos > article {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    width: 251px;
+    cursor: pointer;
+    
+}
+#modelos > article > div {
+    background: linear-gradient(to left, #43cea2,#185a9d);
+    transition: 200ms;
+}
+
+#modelos > article > div img {
+    width: 100%;
+    height: auto;
+    transition: 200ms 100ms;
+}
+#modelos > article > div > h3 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 20px;
+    font-weight: normal;
+    opacity: 0;
+    transition: 300ms 50ms;
+    
+}
+#modelos .gradientDiv {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to left, 90deg, #43cea2 10%, #185a9d 90%);
+}
+
+#modelos > article:hover > div {
+    transform: scale(1.09);
+}
+#modelos > article:hover > div img {
+    transform: scale(0.8);
+}
+#modelos > article:hover > div > h3 {
+    bottom: 15px;
+    opacity: 1;
+}
+
+/* ---- CUERPO PRINCIPAL ---- */
+
+#cuerpoPrincipal {
+    width:100%;
+    height:auto;
+    font-size: 0;
+}
+#contenido {
+    width: 75%;
+    min-height: 500px;
+    display: inline-block;
+    vertical-align: top;
+    background: white;
+}
+#contenido > .latestTitulo {
+    height: 35px;
+}
+#contenido > .welcomeTitle {
+    background: white !important;
+}
+#contenido > .welcomeTitle h1 {
+    color: black;
+}
+#contenido > .welcomeTitle h2 {
+    color: darkgray;
+}
+#contenido > .welcomeTitle a {
+    color: lightgray;
+}
+.panelLateral{
+    width:25%;
+    height:500px;
+    display: inline-block;
+    vertical-align: top;
+    background: #ebebeb;
+    
+}
+.panelLateral .tituloPrincipal {
+    background: inherit;
+
+}
+.panelLateral .tituloPrincipal  h2, .panelLateral .tituloPrincipal  h1 a {
+    color: black;
+}
+.panelLateral .tituloPrincipal  h1 a {cursor: pointer;}
+
+
+.panelLateral p {
+    font-size: 13px;
+    font-family: arial;
+    color: gray;
+    padding: 20px;
+}
+.panelLateral .precio {
+    font-size: 40px;
+    text-align: right;
+    padding: 10px;
+    color: #94e535!important;
+}
+.panelLateral .formLayout input {
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+    padding: 3px;
+    margin-top: 45px;
+    background: #e73050;
+    border: 0px;
+    color: white;
+}
+.panelLateral input[value='BUY'] {
+    margin-top: 5px;
+    background: LightGray;
+}
+/* ---- FOOTER ---- */
+
+#pie {
+    width: 100%;
+    height: 210px;
+    position: fixed;
+    bottom: 0px;
+    background: #363636;
+}
+#links {
+    position: relative;
+    width: 1024px;
+    height: auto;
+    margin: auto;
+    border-bottom: 1px solid gainsboro;
+}
+#links ul {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+}
+#links ul li {
+    display: block;
+    list-style: none;
+    padding: 3px;
+}
+#links ul li a {
+    font-family: arial;
+    font-size: 15px;
+    color: gainsboro;
+}
+#links ul li a:hover {
+    color: white;
+}
+
+#links ul:first-child li a {
+    font-size: 18px;
+    color: white;
+}
+#links ul:first-child li a:hover {
+    color: #e73050;
+}
+#links ul:nth-child(4) {
+    position: absolute;
+    right: 0;
+}
+#links ul:nth-child(4) li {
+    display: inline-block;
+}
+#links ul:nth-child(4) li img {
+    width: 50px;
+    height: 50px;
+}
+
+#pie h3 {
+    color: white;
+    padding: 3px;
+}
+
+/* ---- PROPIEDADES PARA SHOES.PHP ---- */
+
+
+#shoes {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+#bannerhome{
+}
+
+.shoe {
+    position: relative;
+    width: 33%;
+    height: auto;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    transition: 300ms;
+}
+.shoe .img, .shoe .img > img {
+    width: 100%;
+    height: 250%;
+}
+.shoe .tituloPrincipal {
+    background: #ffffff;
+    border-bottom: 3px solid black;
+}
+.shoe .tituloPrincipal h2:first-child, .shoe .tituloPrincipal h4 {
+    color: black;
+    transition: 400ms;
+}
+.shoe .tituloPrincipal h2:nth-child(2) {
+    position: absolute;
+    right: 10px;
+    color: gray;
+}
+.shoe:hover {
+    transform: scale(1.02);
+}
+.shoe:hover .tituloPrincipal > h2:first-child {
+    color:#368be2;
+}
+.shoe .capa {
+    position: absolute;
+    width: 92%;
+    height: 94%;
+    background: black;
+    z-index: 100;
+    opacity: 0;
+}
+/* ---- PROPIEDADES PARA SHOE1.PHP ---- */
+
+#shoePage {
+    width: 100%;
+    height: 100%;
+}
+#shoePage .tituloPrincipal {
+    background: black;
+}
+#shoePage .img {
+    width: 100%;
+    height: 500px;
+    background: blue;
+    overflow-y: hidden;
+}
+#shoePage .img > img {
+    position: relative;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-60%);
+
+}
+.shoePanel {
+    background: white;
+}
+.shoePanel > .tituloPrincipal {
+    background: white;
+}
+.shoePanel > .tituloPrincipal h1 {
+    color: black;
+}
+
+
+/* ------------ Estilos para Formularios .formLayout -------- */
+
+.formDiv {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    
+}
+.formLayout input, .formLayout textarea {
+    display: block;
+    padding: 5px;
+    margin: 5px 0px 5px 0px;
+    width: 100%;
+    font-size: 20px;
+}
+.formLayout .formBtn {
+    background: lightGray;
+    border: 0px;
+    color: #6c6c6c;
+}
+#formContactoDiv input {
+    width: 50%;
+    
+}
+#formContactoDiv textarea {
+    width: 50%;
+    height: 200px;
+}
+.formIniciarSesionDiv, .formRegistroDiv {
+    width: 50%;
+    margin: auto;
+}
+
+/* FORMS DE MENU USUARIO */
+
+#formsMenuUsuario .formIniciarSesionDiv, #formsMenuUsuario .formRegistroDiv {
+    width: 100%;
+    display: none;
+    
+}
+
+input[type="file"] {
+    font-size: 14px;
+}
+
+/* USER PROFILE */
+
+.userProfileImage, .userProfileData {
+    min-width: 300px;
+    height: 200px;
+    margin: auto;
+    padding: 10px;
+    
+}
+.userProfileImage {
+    background: #464646;
+    overflow: hidden;
+}
+.userProfileImage img {
+    position: relative;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.userProfileData .tituloPrincipal {
+    background: inherit;
+    
+}
+.userProfileData .tituloPrincipal h1 {
+    color: black;
+    padding: 3px;
+}
+.userProfileData .tituloPrincipal div {
+    display: inline-block;
+    vertical-align: top;
+}
+.userProfileData .tituloPrincipal div:first-child h1 {
+    color:Darkgray;
+    
+}
+.userProfileData .logOut {
+    background:Darkgray;
+    width: 200px;
+    margin: auto;
+    
+}
+
+
+	@media screen and (max-width: 800px) {
+			
+					#header{
+							width:100%;
+					
+					}
+					#Principal{
+					
+					width:100%;}
+					
+			#SubPrincipal{
+			
+					width:100%;
+			}
+			
+			#contenedor-mains{
+					width:100%;
+			
+			}
+			
+			#botonera,#pie{
+			
+					display: block;
+					margin: auto;
+					width: 100%;
+			
+			}
+			
+			#contenidoPrincipal,#footer,#cuerpoPrincipal,#contenido{
+			
+				margin: auto;
+				text-align:center;
+				width:100%;
+				display: block;
+			}
+			
+			#menuUsuario,#cabecera,#wowslider-container1,.panelLateral{
+			
+			 display: none;
+			}
+			
+			#bannerhome{
+			
+			 width:100%;
+			  height:100%;
+			}
+			
+			
+			#Panel{
+			
+				width:100%;
+			}
+			
+			#Pie{
+			
+				width:100%;
+			}
+			#sombraestilo img{
+					width:100%;
+			
+			}
+			}
+
+
+
+
+
+
+			@media screen and (max-width: 480px) {
+			
+					#header{
+							width:100%;
+					
+					}
+					#Principal{
+					
+					width:100%;}
+					
+			#SubPrincipal{
+			
+					width:100%;
+			}
+			
+			#contenedor-mains{
+					width:100%;
+			
+			}
+			
+			#botonera,#pie{
+			
+					display: block;
+					margin: auto;
+					width: 100%;
+			
+			}
+			
+			#contenidoPrincipal,#footer,#cuerpoPrincipal,#contenido{
+			
+				margin: auto;
+				text-align:center;
+				width:100%;
+				display: block;
+			}
+			
+			#menuUsuario,#cabecera,#wowslider-container1,.panelLateral{
+			
+			 display: none;
+			}
+			
+			#bannerhome{
+			
+			 width:300px;
+			  height:195px;
+			}
+			
+			
+			#Panel{
+			
+				width:100%;
+			}
+			
+			#Pie{
+			
+				width:100%;
+			}
+			#sombraestilo img{
+					width:100%;
+			
+			}
+			}

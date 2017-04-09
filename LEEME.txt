@@ -1,0 +1,13 @@
+Nike WebSite -  
+Autor: Brayan Alcantara Heyliger
+Lenguaje: HTML,Jquery,CSS3 y PHP
+Softwares: Notepad++ v6.7.3 , Explorador Chrome Google, Wow Slider 2015
+Funcionamiento:  Una tienda Shop De Tenis de la Marca Nike, donde se puede observar y obtener dichos productos.
+
+Que es Nike?
+
+Nike Inc. es una empresa multinacional estadounidense dedicada al diseño, desarrollo, fabricación y comercialización de calzado, ropa, equipo, accesorios y otros artículos deportivos.
+Es uno de los mayores proveedores de calzado y prendas deportivos y un importante fabricante de material deportivo,4 con unos ingresos de más de 24,1 mil millones de dólares
+estadounidenses y un total en 2012 de unos 44, 000 empleados. La marca por sí sola tiene un valor de 10,7 mil millones de dólares estadounidenses, lo que es la marca más valiosa 
+entre las corporaciones deportivas.
+
